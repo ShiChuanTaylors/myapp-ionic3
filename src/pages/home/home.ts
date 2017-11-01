@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, ModalController } from 'ionic-angular';
+import { DetailPage } from '../detail/detail';
 
 @Component({
   selector: 'page-home',
@@ -7,8 +8,14 @@ import { NavController } from 'ionic-angular';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController, private modalCtrl: ModalController) {
 
+  }
+
+  openModal() {
+    console.log("open modal");
+    let detailModal = this.modalCtrl.create(DetailPage);
+    detailModal.present();
   }
 
 }

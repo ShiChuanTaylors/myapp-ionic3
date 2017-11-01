@@ -1,0 +1,6 @@
+<div [innerHTML]="text" [class.collapsed]="isCollapsed" [style.max-height]="isCollapsed ? maxHeight+'px' : 'none'" #contentRead>
+  </div>
+  <br />
+  <a *ngIf="isCollapsable" class="readmore-link" (click)="isCollapsed =! isCollapsed">    
+      <i class="material-icons"> {{isCollapsed? 'keyboard_arrow_down':'keyboard_arrow_up'}} </i>
+  </a>
