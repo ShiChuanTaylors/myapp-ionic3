@@ -25,11 +25,11 @@ module.exports = {
       dest: '{{BUILD}}'
     },
     copyLibsScript: {
-        src: ['{{ROOT}}/www/libs/js/*'],
+        src: ['{{ROOT}}/src/libs/js/*'],
         dest: '{{BUILD}}'
     },
     copyLibsCss: {
-        src: ['{{ROOT}}/www/libs/css/*'],
+        src: ['{{ROOT}}/src/libs/css/*'],
         dest: '{{BUILD}}'
     }
   }
